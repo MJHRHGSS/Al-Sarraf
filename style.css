@@ -1,0 +1,37 @@
+.headimator {
+    color: #000000;
+    font-family: monospace;
+    font-size: 20px;
+}
+.col {
+    background-color: darkgray;
+}
+#icon {
+    background-color: black;
+}
+.td {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+td {
+    background-color: #a9a9a9;
+}
+.head {
+    background-color: #a9a9a9;
+    align-content: center;
+}
+@keyframes hover-over-link {
+    0% {color: #000000; font-size: 20px;}
+    100% {color: #424141; font-size: 21px;}
+}
+.headimator:hover {
+    animation: hover-over-link 0.5s;
+    color: #424141;
+    font-size: 21px;
+}
+h1 {
+    align-self: center;
+}
+body {
+    text-align: center;
+}
