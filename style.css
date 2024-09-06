@@ -19,6 +19,7 @@ td {
 .head {
     background-color: #a9a9a9;
     align-content: center;
+    size: 100%;
 }
 @keyframes hover-over-link {
     0% {color: #000000; font-size: 20px;}
@@ -29,9 +30,79 @@ td {
     color: #424141;
     font-size: 21px;
 }
-h1 {
+p {
     align-self: center;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 50px;
 }
 body {
     text-align: center;
+    font-family: monospace;
+}
+.image-back {
+    background-image: url(./Images/R.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100%;
+}
+.body {
+    background-color: gray;
+    font-family: monospace;
+}
+.server-link {
+    font-family: monospace;
+    color: #000000;
+}
+h2 {
+    align-self: center;
+    font-family: monospace;
+}
+@media (prefers-reduced-motion: no-preference){
+.server{
+    opacity: 0;
+    scale: 0.8;
+    animation: server-page linear forwards;
+    animation-timeline: view();
+    animation-range: 50px 36%;
+    background-color: #a9a9a9;
+    width: fit-content;
+    margin: auto;
+    border-radius: 12px;
+    }
+
+    @keyframes server-page {
+        to {
+        opacity: 1;
+        scale: 1;
+        }
+    }
+}
+input {
+    border: none;
+    border-radius: 10px;
+}
+.subm:hover {
+    background-color: black;
+    color: white;
+    animation-name: btn-sub;
+    animation-duration: 1s;
+}
+
+@keyframes btn-sub {
+    from{background-color: white;}
+    to{background-color: black;}
+    from{color: black;}
+    to{color: white;}
+}
+button {
+    border: none;
+    border-radius: 5px !important;
+    background-color: #424141;
+    color: aliceblue;
+}
+.server-ip {
+    width: 65px;
+    height: 25px;
+    font-size: 20px;
 }
