@@ -100,9 +100,74 @@ button {
     border-radius: 5px !important;
     background-color: #424141;
     color: aliceblue;
+    cursor: pointer;
 }
 .server-ip {
     width: 65px;
     height: 25px;
     font-size: 20px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: fit-content;
+    float: left;
+    background-color: darkgray;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.container {
+    padding: 2px 16px;
+}
+.card-txt {
+    font-size: 16px !important;
+}
+#max_amount {
+    font-size: 14px !important;
+}
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #818181;
+    transition: 0.3s;
+}
+.sidebar .closebtn:hover {
+    color: #f1f1f1;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+
+}
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
 }
