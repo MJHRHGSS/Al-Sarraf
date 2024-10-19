@@ -4,19 +4,20 @@
         <title>The Boiz</title>
         <link rel="shortcut icon" href="Images/WhatsApp Image 2024-08-17 at 09.58.07_80b1894c.jpg" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
+        link
         <style>
             
         </style>
     </head>
     <body style="background-color: gray;" id="main">
         <div class="sidebar" id="mySidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a>
             <p style="color: aliceblue !important;">List of orders:</p><br><p id="il" style="color: aliceblue !important; font-size: 16px;"></p>
         </div>
         <table class="head">
             <div>
                 <tr>
-                    <td class="td"><button class="openbtn" onclick="openNav() + addlist()">&#9776; Order list</button></td>
+                    <td class="td"><button class="openbtn" onclick="openNav(); addlist();">&#9776; Order list</button></td>
                     <td><a href='./index.html' id="icon"><img src="Images/WhatsApp Image 2024-08-17 at 09.58.07_80b1894c.jpg" alt="The Boiz" width="75" height="75"></a></td>
                     <td class="td"><a href="./index.html" class="headimator">Home</a></td>
                     <td class="td"><a href="./Minecraft.html" class="headimator">Minecraft servers</a></td>
@@ -26,7 +27,7 @@
         </table>
         <hr>
         <div class="body">
-            <div class="card" onclick="addtolist()">
+            <div class="card" onclick="addtolist();">
                 <br>
                 <img src="./Images/blocks.gif" alt="blocks" style="size: 10px; border-radius: 5px;">
                 <div class="container">
@@ -36,7 +37,7 @@
                   <p class="card-txt">Amount: </p><p id="amount" class="card-txt">0</p>
                 </div>
             </div>
-            <div class="card" onclick="addtolist1()">
+            <div class="card" onclick="addtolist1();">
                 <br>
                 <img src="./Images/R (1).jpeg" alt="Seed" style="size: 10px; border-radius: 5px;" width="200px" height="147px">
                 <div class="container">
@@ -45,7 +46,7 @@
                   <p class="card-txt">Amount: </p><p id="amount1" class="card-txt">0</p><p id="max_amount"><i>Max.: 2</i></p>
                 </div>
             </div>
-            <div class="card" onclick="addtolist2()">
+            <div class="card" onclick="addtolist2();">
                 <br>
                 <img src="./Images/R.png" alt="items" style="size: 10px; border-radius: 5px;" width="147px" height="147px">
                 <div class="container">
@@ -55,7 +56,7 @@
                   <p class="card-txt">Amount: </p><p id="amount2" class="card-txt">0</p>
                 </div>
             </div>
-            <div class="card" onclick="addtolist3()">
+            <div class="card" onclick="addtolist3();">
                 <br>
                 <img src="./Images/OIP.jpeg" alt="items" style="size: 10px; border-radius: 5px;" width="200px" height="147px">
                 <div class="container">
@@ -65,7 +66,7 @@
                   <p class="card-txt">Amount: </p><p id="amount3" class="card-txt">0</p>
                 </div>
             </div>
-            <div class="card" onclick="addtolist4()">
+            <div class="card" onclick="addtolist4();">
                 <br>
                 <img src="./Images/images.jpeg" alt="Avatar" style="size: 10px; border-radius: 5px;" width="147" height="147">
                 <div class="container">
@@ -75,7 +76,7 @@
                   <p class="card-txt">Amount: </p><p id="amount4" class="card-txt">0</p>
                 </div>
             </div>
-            <div class="card" onclick="addtolist5()">
+            <div class="card" onclick="addtolist5();">
                 <br>
                 <img src="./Images/il_570xN.2891834878_dsft.avif" alt="Avatar" style="size: 10px; border-radius: 5px;" width="147" height="147">
                 <div class="container">
@@ -85,7 +86,7 @@
                   <p class="card-txt">Amount: </p><p id="amount5" class="card-txt">0</p>
                 </div>
             </div>
-            <div class="card" onclick="addtolist6()">
+            <div class="card" onclick="addtolist6();">
                 <br>
                 <img src="./Images/hqdefault.jpg" alt="Avatar" style="size: 10px; border-radius: 5px;" width="200" height="147">
                 <div class="container">
@@ -95,7 +96,7 @@
                   <p class="card-txt">Amount: </p><p id="amount6" class="card-txt">0</p>
                 </div>
             </div>
-            <div class="card" onclick="addtolist7()">
+            <div class="card" onclick="addtolist7();">
                 <br>
                 <img src="./Images/images (1).jpeg" alt="Avatar" style="size: 10px; border-radius: 5px;" width="147" height="147">
                 <div class="container">
@@ -106,170 +107,8 @@
                 </div>
             </div>
         </div>
-        <button onclick="reset()">Reset</button>
+        <button onclick="reset();">Reset</button>
         <p class="card-txt">Price: </p><p id="price" class="card-txt">0.000 KWD</p>
-        <script>
-            /* <Product-script> */
-            let list = [];
-            let listbi = [];
-            let amount = 0;
-            let amount1 = 0;
-            let amount2 = 0;
-            let amount3 = 0;
-            let amount4 = 0;
-            let amount5 = 0;
-            let amount6 = 0;
-            let amount7 = 0;
-            let price = 0;
-            function addtolist() {
-                amount++;
-                price = price + 1.000;
-                if (listbi.indexOf(" 0000 0001") == -1) {
-                    list = list + ["Block of your choice in the server of your choice"];
-                    listbi = listbi + [" 0000 0001"];
-                }
-                document.getElementById("amount").innerHTML = amount;
-                document.getElementById("price").innerHTML = price + ".000 KWD";
-            }
-            function addtolist1() {
-                if (amount1 < 2) {
-                    amount1++;
-                    price = price + 2.000;
-                }
-                else {
-                    alert("You cannot add more of this product, you already have the maximum amount.")
-                }
-                if (listbi.indexOf(" 0000 0010") == -1) {
-                    list = list + ["World Seed of server of your choice"];
-                    listbi = listbi + [" 0000 0010"];
-                }
-                document.getElementById("amount1").innerHTML = amount1;
-                document.getElementById("price").innerHTML = price + ".000 KWD";
-            }
-            function addtolist2() {
-                amount2++;
-                price = price + 1.000;
-                if (listbi.indexOf(" 0000 0011") == -1) {
-                    list = list + ["Legal item of your choice in the server of your choice"];
-                    listbi = listbi + [" 0000 0011"];
-                }
-                document.getElementById("amount2").innerHTML = amount2;
-                document.getElementById("price").innerHTML = price + ".000 KWD";
-            }
-            function addtolist3() {
-                amount3++;
-                price = price + 6.000;
-                if (listbi.indexOf(" 0000 0100") == -1) {
-                    list = list + ["Illegal item of your choice in the server of your choice"];
-                    listbi = listbi + [" 0000 0100"];
-                }
-                document.getElementById("amount3").innerHTML = amount3;
-                document.getElementById("price").innerHTML = price + ".000 KWD";
-            }
-            function addtolist4() {
-                amount4++;
-                price = price + 10.000;
-                if (listbi.indexOf(" 0000 0101") == -1) {
-                    list = list + ["Ore blocks/items of your choice in server of your choice"];
-                    listbi = listbi + [" 0000 0101"];
-                }
-                document.getElementById("amount4").innerHTML = amount4;
-                document.getElementById("price").innerHTML = price + ".000 KWD";
-            }
-            function addtolist5() {
-                amount5++;
-                price = price + 3.000;
-                if (listbi.indexOf(" 0000 0110") == -1) {
-                    list = list + ["Tools of your choice in server of your choice"];
-                    listbi = listbi + [" 0000 0110"];
-                }
-                document.getElementById("amount5").innerHTML = amount5;
-                document.getElementById("price").innerHTML = price + ".000 KWD";
-            }
-            function addtolist6() {
-                amount6++;
-                price = price + 3.000;
-                if (listbi.indexOf(" 0000 0111") == -1) {
-                    list = list + ["Potions of your choice in server of your choice"];
-                    listbi = list + [" 0000 0111"];
-                }
-                document.getElementById("amount6").innerHTML = amount6;
-                document.getElementById("price").innerHTML = price + ".000 KWD";
-            }
-            function addtolist7() {
-                amount7++;
-                price = price + 3.000;
-                if (listbi.indexOf(" 0000 1000") == -1) {
-                    list = list + ["Books of your choice in server of your choice"];
-                    listbi = listbi + [" 0000 1000"];
-                }
-                document.getElementById("amount7").innerHTML = amount7;
-                document.getElementById("price").innerHTML = price + ".000 KWD";
-            }
-            function reset() {
-                list = [" "];
-                listbi = [" "];
-                amount = 0;
-                amount1 = 0;
-                amount2 = 0;
-                amount3 = 0;
-                amount4 = 0;
-                amount5 = 0;
-                amount6 = 0;
-                amount7 = 0;
-                price = 0.000;
-                document.getElementById("amount").innerHTML = amount;
-                document.getElementById("amount1").innerHTML = amount1;
-                document.getElementById("amount2").innerHTML = amount2;
-                document.getElementById("amount3").innerHTML = amount3;
-                document.getElementById("amount4").innerHTML = amount4;
-                document.getElementById("amount5").innerHTML = amount5;
-                document.getElementById("amount6").innerHTML = amount6;
-                document.getElementById("amount7").innerHTML = amount7;
-                document.getElementById("price").innerHTML = price;
-            }
-            /* List script*/
-            function addlist() {
-                if (listbi.indexOf(" 0000 0001") == -1) {
-                    document.getElementById("il").innerHTML = amount + "- " + list + "\n";
-                }
-                if (listbi == [" 0000 0010"]) {
-                    document.getElementById("il").innerHTML = amount1 + "- " + list + "\n";
-                }
-                if (listbi == [" 0000 0011"]) {
-                    document.getElementById("il").innerHTML = amount2 + "- " + list + "\n";
-                }
-                if (listbi == " 0000 0100") {
-                    document.getElementById("il").innerHTML = amount3 + "- " + list + "\n";
-                }
-                if (listbi == " 0000 0101") {
-                    document.getElementById("il").innerHTML = amount4 + "- " + list + "\n";
-                }
-                if (listbi == " 0000 0110") {
-                    document.getElementById("il").innerHTML = amount5 + "- " + list + "\n";
-                }
-                if (listbi == " 0000 0111") {
-                    document.getElementById("il").innerHTML = amount6 + "- " + list + "\n";
-                }
-                if (listbi == " 0000 1000") {
-                    document.getElementById("il").innerHTML = amount7 + "- " + list + "\n";
-                }
-                else {
-                    document.getElementById("il").innerHTML = "";
-                }
-            }
-            /* </Product-script> */
-
-            /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-            function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-            };
-            /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-            function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            };
-        </script>
+        <script src="./shop.js"></script>
     </body>
 </html>

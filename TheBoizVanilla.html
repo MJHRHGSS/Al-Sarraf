@@ -20,8 +20,9 @@
         <div class="body">
             <div class="server">
                 <p class="server-link" style="font-size: 100px !important;">The Boiz <br> Vanilla</p>
+                <p style="color: yellow !important; font-size: 100px !important;" id="cc">&#9888;</p> <p style="color: yellow !important;" id="cc1">The Boiz Vanilla is currently <br> unavailable for creation purposes, <br> we are working very hard <br> and will bring you this <br> server back better than ever. <br> <i>The Boiz Vanilla</i></p>
                 <br><br><br><br><br>
-                <p>Server IP address: <br> theboizvanilla.aternos.me <button onclick="Copy()" class="server-ip">Copy</button></p>
+                <p>Server IP address: <br> theboizzvanilla.aternos.me <button onclick="Copy()" class="server-ip">Copy</button></p>
                 <br><br><br><br><br>
                 <p class="server-link" style="font-size: 50px !important;">Join the <a class="headimator" style="font-size: 50px !important;" href="https://www.discord.com/invite/PzEcEgwXqA">Discord server</a>!</p>
                 <br><br>
@@ -37,9 +38,25 @@
         <br><br><br><br><br>
         <script>
             function Copy() {
-                navigator.clipboard.writeText("theboizvanilla.aternos.me");
+                navigator.clipboard.writeText("theboizzvanilla.aternos.me");
                 alert("Copied to clipboard");
-            }
+            };
+            const textElement = document.getElementById('cc');
+            const colors = ['red', 'yellow'];
+            let colorIndex = 0;
+
+            setInterval(() => {
+                textElement.style.color = colors[colorIndex];
+                colorIndex = (colorIndex + 1) % colors.length;
+            }, 1000);
+            const textElement1 = document.getElementById('cc1');
+            const colors1 = ['red', 'yellow'];
+            let colorIndex1 = 0;
+
+            setInterval(() => {
+                textElement1.style.color = colors1[colorIndex1];
+                colorIndex1 = (colorIndex1 + 1) % colors1.length;
+            }, 1000);
         </script>
     </body>
 </html>
