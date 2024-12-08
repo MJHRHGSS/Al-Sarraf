@@ -1,0 +1,6 @@
+1-
+                <div class="server">
+                    <p class="server-link">Server #3:<a href="./TheBoizPlugins.html" class="server-link"> <br> The Boiz Nations</p></a>
+                    <h2 class="server-link">This server is the one thought to be most convenient. <br> It is a plugins server <br>The plugins make it so that you don't need to download any mods to achieve the exquisity of them. <br> 	   	    Instead all you need to do is join the server, the plugins <br> will provide a very convenient experience that is sure to please you</h2>
+                </div>
+2-

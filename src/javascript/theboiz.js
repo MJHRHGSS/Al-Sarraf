@@ -96,8 +96,8 @@
                 document.getElementById("price").innerHTML = price + ".000 KWD";
             }
             function reset() {
-                list = [" "];
-                listbi = [" "];
+                list = [];
+                listbi = [];
                 amount = 0;
                 amount1 = 0;
                 amount2 = 0;
@@ -118,33 +118,43 @@
                 document.getElementById("price").innerHTML = price;
             }
             /* List script*/
+            Innerhtml = document.getElementById("il").innerHTML;
             function addlist() {
                 if (listbi.indexOf(" 0000 0001") == -1) {
-                    document.getElementById("il").innerHTML = innerHTML + amount + "- " + list[0] + "\n";
+                    document.getElementById("il").innerHTML = Innerhtml + amount + "- " + list[0] + "\n";
+                    Innerhtml = document.getElementById("il").innerHTML;
                 }
                 if (listbi.indexOf(" 0000 0010") == -1) {
-                    document.getElementById("il").innerHTML = innerHTML + amount1 + "- " + list[0] + "\n";
+                    document.getElementById("il").innerHTML = Innerhtml + amount1 + "- " + list[0] + "\n";
+                    Innerhtml = document.getElementById("il").innerHTML;
                 }
                 if (listbi.indexOf(" 0000 0011") == -1) {
                     document.getElementById("il").innerHTML = innerHTML + amount2 + "- " + list[0] + "\n";
+                    Innerhtml = document.getElementById("il").innerHTML;
                 }
                 if (listbi.indexOf(" 0000 0100") == -1) {
-                    document.getElementById("il").innerHTML = innerHTML + amount3 + "- " + list[0] + "\n";
+                    document.getElementById("il").innerHTML = Innerhtml + amount3 + "- " + list[0] + "\n";
+                    Innerhtml = document.getElementById("il").innerHTML;
                 }
                 if (listbi.indexOf(" 0000 0101") == -1) {
-                    document.getElementById("il").innerHTML = innerHTML + amount4 + "- " + list[0] + "\n";
+                    document.getElementById("il").innerHTML = Innerhtml + amount4 + "- " + list[0] + "\n";
+                    Innerhtml = document.getElementById("il").innerHTML;
                 }
                 if (listbi.indexOf(" 0000 0110") == -1) {
-                    document.getElementById("il").innerHTML = innerHTML + amount5 + "- " + list[0] + "\n";
+                    document.getElementById("il").innerHTML = Innerhtml + amount5 + "- " + list[0] + "\n";
+                    Innerhtml = document.getElementById("il").innerHTML;
                 }
                 if (listbi.indexOf(" 0000 0111") == -1) {
-                    document.getElementById("il").innerHTML = innerHTML + amount6 + "- " + list[0] + "\n";
+                    document.getElementById("il").innerHTML = Innerhtml + amount6 + "- " + list[0] + "\n";
+                    Innerhtml = document.getElementById("il").innerHTML;
                 }
                 if (listbi.indexOf(" 0000 1000") == -1) {
-                    document.getElementById("il").innerHTML = innerHTML + amount7 + "- " + list[0] + "\n";
+                    document.getElementById("il").innerHTML = Innerhtml + amount7 + "- " + list[0] + "\n";
+                    Innerhtml = document.getElementById("il").innerHTML;
                 }
                 else {
                     document.getElementById("il").innerHTML = "";
+                    Innerhtml = document.getElementById("il").innerHTML;
                 }
                 alert(list);
                 alert(listbi);
