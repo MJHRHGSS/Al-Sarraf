@@ -1,10 +1,105 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/src/css/style.css">
-        <link rel="shortcut icon" href="/assets/Images/logo.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Freelance programming at low prices and wide ranges.">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Java">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/grad.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="shortcut icon" href="/assets/Images/PFP.png" type="image/x-icon">
+        <title>Al-Sarraf</title>
     </head>
     <body>
-        <h1>The website is currently being re-built, will send an announcement in our <a href="https://discord.gg/bXvkEX9mpC">discord server</a> once it is complete</h1>
+        <div id="head">
+            <div class="topnav">
+                <a href="#about">About</a>
+                <a href="#scopes">Scopes</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="./theboiz/servers.html">The Boiz</a>
+              </div>
+        </div>
+        <div id="grad">
+            <div id="grad-txt"><p>AL-SARRAF</p></div>
+        </div>
+        <div id="body">
+            <div id="about">
+                <h1>Who am I?</h1>
+                <p>I am Muhammad Al-Sarraf, a self taught freelance programmer. Mainly doing back-end, I specialise in lots of scopes, from software engineering to web development, and even discord bots.</p>
+                <div id="change"></div>
+                <hr>
+            </div>
+            <div id="scopes">
+                <h1>Scopes</h1>
+                <br>
+                <div id="webDev" class="scope">
+                    <div class="Stxt scopeCont">
+                        <h2>Website development</h2>
+                        <p>Website development (or "web dev") is the first thing I learned to do. It is an important aspect that allows me to make websites freely, just the way I want them to be. This has led to me being able to create this personal website so to share my knowledge and increase my chances as a freelancer.</p>
+                    </div>
+                    <div class="Simg scopeCont"><img src="/assets/Images/HTMLicon.png" alt="HTML icon" width="35%"></div>
+                </div>
+                <div id="gameDev" class="scope">
+                    <div class="Simg scopeCont"><img src="" alt="2D game"></div>
+                    <div class="Stxt scopeCont">
+                        <h2>Game development</h2>
+                        <p>Game dev is another big part of programming, because it is pretty protifable with the amount of people gaming these days. It is the second thing I learned to do and love to do it. The thrill of playing your own game is uncomparable.<br>The only setbacks you'll see in me are: <br><br> 1- I can only make 2D games. <br> 2- I cannot provide the sprites for the game. <br><br> And if you're thinking that mentioning my weak points isn't a good idea, honesty is a key to success, and I hope these will not affect you're requests, if you have any, much.</p>
+                    </div>
+                </div>
+                <div id="discordBots" class="scope">
+                    <div class="Stxt scopeCont">
+                        <h2>Discord bots</h2>
+                        <p>Making discord bots is always a thrill, no matter what language you're making them on, especially if it's a bot for a certain task that involves things other than Discord, usually game APIs. If you want to see how I develop my discord bots you can join my discord bot test server, or you can go to the <a href="#projects">projects</a> page and look at which bot interests you the most.</p>
+                    </div>
+                    <div class="Simg scopeCont"><img src="/assets/Images/discordIcon.png" alt="Discord icon" width="35%"></div>
+                </div>
+                <div id="backEnd" class="scope">
+                    <div class="Simg scopeCont"><img src="/assets/Images/backEndIcon.png" alt="Back-end icon" width="35%"></div>
+                    <div class="Stxt scopeCont">
+                        <h2>Back-end development</h2>
+                        <p>Since I develop websites, the most important two aspects to know are back-end and front-end. To be honest, I am pretty bad at front-end, so I decided to focus more on back-end, using mostly JavaScript and PHP. Back-end allows me to manage the server side of the website, like setting up account creation and cyber security.</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div id="projects">
+                <h1>Projects</h1>
+                <br>
+                <div class="container">
+                    <div class="project">
+                        <img src="/assets/Images/MoJh.png" alt="MoJh's profile picture">
+                        <div>
+                            <h2>MoJh</h2>
+                            <p>MoJh is the first discord bot I made. It is a moderation bot made with Java. Its original plan was to be a "Clash of Clans" bot but I thought that I should start simple with no APIs as it was the first.</p>
+                            <div class="cntBTN"><div class="between"></div><div class="btn between"><a href="https://discord.gg/fxkWBm7DBv"><button>Discord server &#129141;</button></a></div><div class="between"></div></div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="/assets/Images/" alt="(Game name) preview image">
+                        <div>
+                            <h2>Racism</h2>
+                            <p>The name could be a little misleading, this game is anti-racist. It goes through the history of racism and its defitnion in a unique way, being both entertaining and </p>
+                            <div class="cntBTN"><div class="between"></div><div class="btn between"><a href=""><button>(Game download) &#129141;</button></a></div><div class="between"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div id="contact">
+                <h1>Contact me</h1>
+                <br>
+                <div id="contCont">
+                    <p>Interested? Please contact me at the following: <br><br> 
+                        Email: <a href="" class="normaltxt">muhammad08102009@outlook.com</a> 
+                        <br><br> 
+                        Phone: <u onclick="copy()" class="normaltxt" id="myNum">+965 97344188</u> 
+                        <br><br> 
+                        Discord username: <a href="https://discordapp.com/users/1179845293328576677" class="normaltxt">m1829js</a></p>
+                </div>
+            </div>
+        </div>
+        <script src="../javascript/script.js"></script>
     </body>
 </html>
