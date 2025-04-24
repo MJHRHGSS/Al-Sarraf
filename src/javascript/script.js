@@ -40,6 +40,11 @@ setTimeout(typeWriter, speed);
 
 //----------------------------------------------------
 
-function copy() {
-  navigator.clipboard.writeText(document.getElementById("myNum").innerHTML)
+function copyN() {
+  navigator.clipboard.writeText(document.getElementById("myNum").innerHTML);
+  alert("Copied to clipboard");
+}
+function copyE() {
+  navigator.clipboard.writeText(document.getElementById("myMail").innerHTML);
+  alert("Copied to clipboard");
 }
