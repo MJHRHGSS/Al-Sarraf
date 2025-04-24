@@ -1,6 +1,0 @@
-<h3>If this doesn't work please call: <button onclick="Copy()" id="number">+965 9734 4188</button></h3>
-<script>
-    function Copy() {
-        navigator.clipboard.writeText(document.getElementById("number").innerHTML);
-    }
-</script>
