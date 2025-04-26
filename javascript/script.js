@@ -1,7 +1,31 @@
-var i = 0;
-var txt = 'Web development ';
-var speed = 150;
-var delSpeed = 50;
+// Variables
+
+let i = 0;
+let txt = "Web development ";
+let speed = 150;
+let delSpeed = 50;
+let screenType = null;
+
+getScreenType();
+
+// Functions
+
+function copyN() {
+  navigator.clipboard.writeText(document.getElementById("myNum").innerHTML);
+  alert("Copied to clipboard");
+}
+function copyE() {
+  navigator.clipboard.writeText(document.getElementById("myMail").innerHTML);
+  alert("Copied to clipboard");
+}
+
+function getScreenType() {
+  if (window.innerWidth <= 760) {
+    alert("This website is better with larger width, please rotate your device or use a larger screen.");
+    window.location.href = "./mobile.html";
+  }
+}
+
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("change").innerHTML += txt.charAt(i);
@@ -37,14 +61,3 @@ function deleteTXT() {
     }
   }
 setTimeout(typeWriter, speed);
-
-//----------------------------------------------------
-
-function copyN() {
-  navigator.clipboard.writeText(document.getElementById("myNum").innerHTML);
-  alert("Copied to clipboard");
-}
-function copyE() {
-  navigator.clipboard.writeText(document.getElementById("myMail").innerHTML);
-  alert("Copied to clipboard");
-}
