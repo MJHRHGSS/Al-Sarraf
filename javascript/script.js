@@ -21,7 +21,6 @@ function copyE() {
 
 function getScreenType() {
   if (window.innerWidth <= 760) {
-    alert("This website is better with larger width, please rotate your device or use a larger screen.");
     window.location.href = "./mobile.html";
   }
 }
